@@ -10,7 +10,9 @@ var numbers = "123456789".split("");
 
 function writePassword() {
 
-  var passwordLength = (promt("how many characters?"))
+  var passwordLength;
+  passwordLength = window.prompt("how many characters?");
+
 
   var password = generatePassword();
   var passwordText = document.querySelector("#textArea");
@@ -20,6 +22,8 @@ function writePassword() {
 }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword,);
+
+
 
 // ```
   // GIVEN I need a new, secure password
