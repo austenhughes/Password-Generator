@@ -12,6 +12,8 @@ function writePassword() {
 console.log(password)
 }
 
+generateBtn.addEventListener("click", generatePassword,);
+
 function generatePassword() {
     for (var i=0; i<passwordLength; i++){
         password = password + selectedCharacters[Math.floor(Math.random() *selectedCharacters.length)]
@@ -19,5 +21,4 @@ function generatePassword() {
 writePassword()
 }
 
-generateBtn.addEventListener("click", generatePassword,);
 

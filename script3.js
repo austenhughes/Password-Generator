@@ -12,3 +12,23 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+
+
+
+
+
+function generatePassword() {
+  for (var i=0; i<passwordLength; i++){
+    console.log("password");
+    var characterChoice = Math.floor(Math.random() * selectedCharacters.Length);
+    password.push(selectedCharacters[characterChoice]);
+  }
+
+writePassword();
+
+function writePassword() {
+  console.log(password)
+}
+
+}
