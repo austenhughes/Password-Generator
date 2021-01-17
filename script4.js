@@ -9,8 +9,23 @@ var numbers = "123456789".split("");
 var selectedCharacters = [];
 var passwordLength = [];
 var password = "";
+var passwordNew = "";
 
 // Write password to the #password input
+
+function writePassword() {
+    console.log("password", passwordNew)
+    passwordText.textContent = "this will be the new password"
+    }
+    
+function generatePassword() {
+    for (var i=0; i<passwordLength; i++){
+    var random = password + selectedCharacters[Math.floor(Math.random() * selectedCharacters.length)]
+    random = passwordNew
+     }
+    console.log("this should be where the for loop does its thing but its not right now");
+    writePassword();
+    }
 
 function passwordOptions() {
 
@@ -69,44 +84,6 @@ function passwordOptions() {
 
 }
 
-function generatePassword() {
-  for (var i=0; i<passwordLength; i++) {
-    var random = [Math.floor(Math.random() * selectedCharacters.length)]
-    password.push(selectedCharacters[random]);
-    passwordText.textContent = password
-  }
-  writePassword();
-}
-
-function writePassword() {
-  console.log("password", password);
-}
-
 // Add event listener to generate button
 
 generateBtn.addEventListener("click", passwordOptions,);
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function writePassword() {
-//   console.log("password", password)
-//   }
-  
-// function generatePassword() {
-//     console.log ("this is working")
-      
-//     for (var i=0; i<passwordLength; i++){
-//       var randomNum = Math.floor(Math.random() *selectedCharacters.length);
-//       password.push(selectedCharacters[randomNum]);
-//     }
-//     passwordText.textContent= password;}
