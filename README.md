@@ -20,4 +20,4 @@ If you would like a different password hit the button and you will start the que
 
 All steps console log information as you go. Here you can find previously generated passwords/info about what kind of characters you have selected for each password that had been generated.  
 
-![](assets/password-generator1-17-21.pgn)
+![](assets/password-generator1-17-21.png)
