@@ -9,7 +9,6 @@ var numbers = "123456789".split("");
 var selectedCharacters = [];
 var passwordLength = [];
 var password = "";
-var passwordNew = "";
 
 // Write password to the #password input
 
@@ -21,7 +20,7 @@ function writePassword() {
 function generatePassword() {
     for (var i=0; i<passwordLength; i++){
     var random = password + selectedCharacters[Math.floor(Math.random() * selectedCharacters.length)]
-    random = passwordNew
+    random = password
      }
     console.log("this should be where the for loop does its thing but its not right now");
     writePassword();
