@@ -16,48 +16,48 @@ function passwordOptions() {
     var passwordLength;
     passwordLength = parseInt(window.prompt("How many characters? ... please chose a number between 8 and 128"));
     if(passwordLength < 8 || passwordLength > 128 || isNaN(passwordLength)){
-        alert("please choose a number between 8 and 128");
+        alert("Please choose a number between 8 and 128");
         return;
     } else { 
         console.log(passwordLength);
     }
   
     var useLowerCase;
-    useLowerCase = confirm("include lowercase letter? Click ok for yes and cancel for no.");
+    useLowerCase = confirm("Include lowercase letter? Click ok for yes and cancel for no.");
     if (useLowerCase){
-      console.log("include lowercase");
+      console.log("Include lowercase");
       selectedCharacters =selectedCharacters.concat(lowerCase);
     }else{
-      console.log("no lowercase");
+      console.log("No lowercase");
     }
   
     var useUpperCase;
-    useUpperCase = confirm("include upercase letters? Click ok for yes and cancel for no.");
+    useUpperCase = confirm("Include uppercase letters? Click ok for yes and cancel for no.");
     if (useUpperCase){
-      console.log("include uppercase");
+      console.log("Include uppercase");
       selectedCharacters =selectedCharacters.concat(upperCase);
     }else{
-      console.log("no uppercase");
+      console.log("No uppercase");
     }
     
     var useNumbers;
-    useNumbers = confirm("include numbers? Click ok for yes and cancel for no.");
+    useNumbers = confirm("Include numbers? Click ok for yes and cancel for no.");
     if (useNumbers){
-      console.log("include numbers");
+      console.log("Include numbers");
       selectedCharacters =selectedCharacters.concat(numbers);
     }else{
-      console.log("no nuumbers")
+      console.log("No numbers")
     }
   
-    var useSpecail;
-    useSpecail = confirm("use specail charecters? Click ok for yes and cancel for no.");
-    if (useSpecail){
-      console.log("include specail characters");
+    var useSpecial;
+    useSpecial = confirm("Include special characters? Click ok for yes and cancel for no.");
+    if (useSpecial){
+      console.log("Include special characters");
       selectedCharacters =selectedCharacters.concat(special);
-      console.log(selectedCharacters, "selected characters");
+      console.log(selectedCharacters, "Selected characters");
     }else{
       console.log("no special characters");
-      console.log(selectedCharacters, "selected characters");
+      console.log(selectedCharacters, "Selected characters");
     }
   
     if (!useLowerCase && !useUpperCase && !useNumbers && !useSpecail){
