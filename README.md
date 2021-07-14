@@ -18,6 +18,8 @@ The password box will let you copy the new password to take with you but you can
 
 If you would like a different password hit the button and you will start the question over and get a new password just like before.
 
-All steps console log information as you go. Here you can find previously generated passwords/info about what kind of characters you have selected for each password that had been generated.  
+All steps console log information as you go. Here you can find previously generated passwords/info about what kind of characters you have selected for each password that had been generated. 
+
+link : https://austenhughes.github.io/Password-Generator/
 
 ![](assets/password-generator1-17-21.png)
